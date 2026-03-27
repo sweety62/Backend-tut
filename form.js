@@ -25,7 +25,7 @@
     });
     req.on('end',()=>{
       let rawData = Buffer.concat(dataBody).toString();
-      let readableData = querystring.perse(rawData);
+      let readableData = querystring.parse(rawData);
       console.log( readableData);
 
     })
